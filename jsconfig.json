@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/components": ["src/components/index.js"],
+      "~/collections": ["src/collections/index.js"],
+      "~/utils": ["src/utils/index.js"]
+    }
+  }
+}
