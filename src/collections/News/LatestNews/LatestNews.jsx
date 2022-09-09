@@ -6,6 +6,7 @@ import ImageWithBg from 'src/components/Image/ImageWithBg'
 import { Container } from 'src/components/Container'
 import NewsItem from './NewsItem'
 import NewsArticle from '../NewsArticle'
+import { newsData, smallNews } from 'src/data/mockData'
 
 export const LatestNews = () => {
   return (
@@ -20,11 +21,9 @@ export const LatestNews = () => {
       </div>
 
       <div style={{display: 'flex', flexDirection: 'column', gap:'30px'}}>
-
-        <NewsItem thumbnail={"/mock-images/mock-3.png"} shortName="AMD" percentChange={"+5"} title="A Look At Advanced Micro Devices (AMD) As The Stock Piggybacks and set apart in A Look At Advanced" />
-        <NewsItem thumbnail={"/mock-images/mock-2.png"} shortName="AMD" percentChange={"+5"} title="A Look At Advanced Micro Devices (AMD) As The Stock Piggybacks Nvidia On Post-Earnings" />
-        <NewsItem thumbnail={"/mock-images/mock-4.png"} shortName="AMD" percentChange={"+5"} title="A Look At Advanced Micro Devices (AMD) As The Stock Piggybacks Nvidia On Post-Earnings" />
-
+        {smallNews.map(news => (
+          <NewsItem key={news.id} thumbnail={news.thumbnail} shortName={news.shortName} percentChange={"+5"} title={news.title} />
+        ))}
       </div>
     </div>
 
