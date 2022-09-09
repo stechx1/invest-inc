@@ -1,6 +1,6 @@
 /* eslint-disable react/display-name */
-import styled, {css} from 'styled-components';
-import { forwardRef } from 'react';
+import styled, { css } from "styled-components";
+import { forwardRef } from "react";
 
 const baseContainerStyles = css`
   margin: 0 auto;

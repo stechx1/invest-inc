@@ -2,15 +2,13 @@ import { Layout } from "antd";
 const { Header, Content, Footer } = Layout;
 import { Navbar } from "../Navbar/Navbar";
 
-export const NormalLayout = ({children}) => {
+export const NormalLayout = ({ children }) => {
   return (
-    <Layout style={{backgroundColor:"#171C29"}}>
+    <Layout style={{ backgroundColor: "#171C29" }}>
       <Header>
-        <Navbar/>
+        <Navbar />
       </Header>
-      <Content>
-        {children}
-      </Content>
+      <Content>{children}</Content>
     </Layout>
-  )
-}
+  );
+};

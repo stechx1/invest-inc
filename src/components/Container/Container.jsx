@@ -1,11 +1,8 @@
 /* eslint-disable react/display-name */
-import { forwardRef } from 'react';
+import { forwardRef } from "react";
 
-import { StyledContainer } from './elements'
+import { StyledContainer } from "./elements";
 
-export const Container = forwardRef(
-  (props, ref) => {
-  return (
-    <StyledContainer {...props} ref={ref}/>
-  )
-})
+export const Container = forwardRef((props, ref) => {
+  return <StyledContainer {...props} ref={ref} />;
+});

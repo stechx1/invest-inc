@@ -1,5 +1,5 @@
 import { Menu, Layout } from "antd";
-const  { Header }  = Layout;
+const { Header } = Layout;
 
 export const Navbar = () => {
   return (
@@ -8,7 +8,7 @@ export const Navbar = () => {
       <Menu
         theme="dark"
         mode="horizontal"
-        defaultSelectedKeys={['2']}
+        defaultSelectedKeys={["2"]}
         items={new Array(5).fill(null).map((_, index) => {
           const key = index + 1;
           return {
@@ -18,5 +18,5 @@ export const Navbar = () => {
         })}
       />
     </Header>
-  )
-}
+  );
+};

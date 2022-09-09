@@ -5,7 +5,7 @@ import { LatestNews } from "~/collections";
 export default function Home() {
   return (
     <Container>
-      <LatestNews/>
+      <LatestNews />
     </Container>
-  )
+  );
 }
