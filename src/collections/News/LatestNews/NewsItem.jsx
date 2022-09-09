@@ -7,7 +7,7 @@ const NewsItem = ({thumbnail, shortName, percentChange, title}) => {
           <div>
             <img width={150} src={thumbnail} alt="news-item" />
           </div>
-          <div style={{display: 'flex', flexDirection: 'column' }}>
+          <div style={{display: 'flex', flexDirection: 'column', marginLeft: "12px" }}>
           <span>{shortName} <span style={{color:'green'}}>{percentChange}</span></span>
             <span>{title}</span>
           </div>
