@@ -1,18 +1,13 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
-import React from 'react'
 import {Row, Col} from 'antd'
-import ImageWithBg from 'src/components/Image/ImageWithBg'
-import { Container } from 'src/components/Container'
+import { Container, ImageWithBg } from '~/components'
 import NewsItem from './NewsItem'
 import NewsArticle from '../NewsArticle'
-import { newsData, smallNews } from 'src/data/mockData'
+import { newsData, smallNews } from '~/data'
 
 export const LatestNews = () => {
   return (
     <Container>
       <h1>Latest News</h1>
-
     <div style={{display: 'flex', gap:'24px',justifyContent:'center'}}>
       <div style={{display: 'flex', flexDirection: 'column'}}>
         <ImageWithBg backgroundUrl={"/mock-images/mock-1.png"} height="50vh"/>
