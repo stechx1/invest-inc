@@ -28,39 +28,13 @@ export const LatestNews = () => {
     </div>
 
     <div>
-    <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} style={{marginTop: "60px"}} >
-      <Col span={8}>
-        <NewsArticle thumbnail={"/mock-images/mock-11.png"} width="350px" title="A Look At Advanced Micro Devices (AMD) As The Stocks"/>
-      </Col>
-      <Col span={8}>
-      <NewsArticle thumbnail={"/mock-images/mock-12.png"} width="350px" title="A Look At Advanced Micro Devices (AMD) As The Stocks"/>
-      </Col>
-      <Col span={8}>
-      <NewsArticle thumbnail={"/mock-images/mock-13.png"} width="350px" title="A Look At Advanced Micro Devices (AMD) As The Stocks"/>
-      </Col>
-    </Row>
-    <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} style={{marginTop: "60px"}} >
-      <Col span={8}>
-        <NewsArticle thumbnail={"/mock-images/mock-5.png"} width="350px" title="A Look At Advanced Micro Devices (AMD) As The Stocks"/>
-      </Col>
-      <Col span={8}>
-      <NewsArticle thumbnail={"/mock-images/mock-14.png"} width="350px" title="A Look At Advanced Micro Devices (AMD) As The Stocks"/>
-      </Col>
-      <Col span={8}>
-      <NewsArticle thumbnail={"/mock-images/mock-7.png"} width="350px" title="A Look At Advanced Micro Devices (AMD) As The Stocks"/>
-      </Col>
-    </Row>
-    <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} style={{marginTop: "60px"}} >
-      <Col span={8}>
-        <NewsArticle thumbnail={"/mock-images/mock-8.png"} width="350px" title="A Look At Advanced Micro Devices (AMD) As The Stocks"/>
-      </Col>
-      <Col span={8}>
-      <NewsArticle thumbnail={"/mock-images/mock-9.png"} width="350px" title="A Look At Advanced Micro Devices (AMD) As The Stocks"/>
-      </Col>
-      <Col span={8}>
-      <NewsArticle thumbnail={"/mock-images/mock-10.png"} width="350px" title="A Look At Advanced Micro Devices (AMD) As The Stocks"/>
-      </Col>
-    </Row>
+      <Row gutter={[16, 16]} style={{marginTop: "60px"}} >
+      {newsData.map(news => (
+         <Col  key={news.id} span={8}>
+           <NewsArticle thumbnail={news.thumbnail} width="350px" title={news.title}/>
+         </Col>
+      ))}
+      </Row>
     </div>
     </Container>
   )
